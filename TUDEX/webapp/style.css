@@ -24,7 +24,6 @@ body {
     flex: 1;
     background-color: #f7f7f7;
     overflow: auto;
-    margin-bottom: 1.5em;
 }
 
 
@@ -63,7 +62,23 @@ body {
     display: flex;
     flex-direction: row;
     background: rgb(0, 40, 51);
+    font-weight: bold;
+    color: white;
 }
+
+.bonus-div {
+    display: flex;
+    flex-direction: row;
+    background: rgb(0, 40, 51);
+    box-shadow: 4px 4px 8px 4px #888888;
+    color: #fed952;
+    margin: 1.5em 3em;
+    padding: 1em;
+    font-size: xx-large;
+    font-weight: bold;
+
+}
+
 
 .badge_footer_left {
     text-align: center;
@@ -95,6 +110,8 @@ body {
 
 .img_txt_container_text {
     padding: 0.2em;
+    flex: 1;
+    text-align: center;
 }
 
 .logo {
@@ -117,16 +134,12 @@ body {
 /******************* *************** *******************/
 
 .footer-text {
-    margin: auto;
+    color: #fed952;
+    background: rgb(0, 40, 51);
     display: flex;
-    flex-direction: row;
-    color: white;
-  /*   margin: auto;
-    font-size: 3em;
-    color: white;
-    flex: 1;
+    font-size: xx-large;
     font-weight: bold;
-    text-align: center; */
+    flex: 1;
 }
 
 .arrow-button {

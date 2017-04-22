@@ -4,25 +4,34 @@ function manageEvents(events, position) {
 
 
     events.forEach(function(event) {
+        const METERS_100 = 100;
+        const DISTANCE_TOLERANCE = 42;
+
+        let distance = getDistanceFromLatLonInMeters(event.coords.latitude, event.coords.longitude, position.coords.latitude, position.coords.longitude);
+
         //Debugging stuff
         //console.log(event);
         // console.log(position);
-        const METERS_100 = 100;
-        let distance = getDistanceFromLatLonInMeters(event.coords.latitude, event.coords.longitude, position.coords.latitude, position.coords.longitude);
         console.log(event.title + " -> " + getEventTimeSet(event.startTime, event.endTime) + " # " + distance);
 
-        let eventInAnHourSlot = isEventInAnHourSlot(event);
+        if(event.type ==="BONUS"){
+            console.error(event.title + " -> " + getEventTimeSet(event.startTime, event.endTime) + " # " + distance);
+            if (distance <= DISTANCE_TOLERANCE && isEventInADaySlot(event)) {
+                appenDivToContent(createBonusDiv(event));
+                flamesCount = flamesCount + event.points;
+            }
+        }
 
-        if (distance <= METERS_100 && eventInAnHourSlot) {
-            let mtsDistance = parseInt(distance) + ' meters'; //gets the integer value and concats meters
-            let badgeDiv = createBagdeDiv(event, mtsDistance);
-
-            appenDivToContent(badgeDiv);
-            flamesCount++;
+        if(event.type ==="NOTIFICATION") {//TODO Constants
+            if (distance <= METERS_100 && isEventInAnHourSlot(event)) {
+                let mtsDistance = parseInt(distance) + ' meters'; //gets the integer value and concats meters
+                appenDivToContent(createBagdeDiv(event, mtsDistance));
+                flamesCount = flamesCount + event.points;
+            }
         }
     });
 
-    let flamesFooterDiv = createTxtImgDiv('images/fire_1.png', 'Your flame count: ' + flamesCount);
+    let flamesFooterDiv = createTxtImgDiv('images/fire_1.png', 'Your Flame count: ' + flamesCount);
     document.body.getElementsByClassName('footer-text')[0].appendChild(flamesFooterDiv);
 
 }
@@ -30,11 +39,34 @@ function manageEvents(events, position) {
 function isEventInAnHourSlot(event) {
     const HOUR_IN_MILIS = 1000 * 60 * 60; //I'm using a constant here since an Hour will be always an hour :)
 
-    let nowTimestamp = 1492858623573; //TODO go baxk to Date.now();
+    let nowTimestamp = 1492858623573; //TODO go back to Date.now();
     let fromNowToStart = event.startTime - nowTimestamp;
 
     return (nowTimestamp >= event.startTime && nowTimestamp <= event.endTime) || //Event has already started but hasn't finished yet OR
         (nowTimestamp < event.startTime && fromNowToStart >= 0 && fromNowToStart <= HOUR_IN_MILIS); //Event will start in less than an hour
+}
+
+function isEventInADaySlot(event) {
+    const DAY_IN_MILIS = 1000 * 60 * 60 *24;
+
+    let nowTimestamp = 1492858623573; //TODO go back to Date.now();
+    let fromNowToStart = event.startTime - nowTimestamp;
+
+    return (nowTimestamp >= event.startTime && nowTimestamp <= event.endTime) || //Event has already started but hasn't finished yet OR
+        (nowTimestamp < event.startTime && fromNowToStart >= 0 && fromNowToStart <= DAY_IN_MILIS); //Event will start in less than an hour
+}
+
+function createBonusDiv(event) {
+    let bonusDiv = document.createElement('div');
+    bonusDiv.className = 'badge_box';
+
+    let bonusImgDiv = createImgTxtDiv('images/fire_1.png', event.title + " "+event.points+'+ Flames!');
+    bonusImgDiv.appendChild(createImgDiv('images/fire_1.png'));
+
+    bonusImgDiv.className = 'bonus-div';
+    bonusDiv.appendChild(bonusImgDiv);
+
+    return bonusImgDiv;
 }
 
 
@@ -43,30 +75,32 @@ function createBagdeDiv(event, distance) {
     badgeDiv.className = 'badge_box';
 
     //Badge Header
-    let badgeHead = document.createElement('div');
-    badgeHead.className = 'badge_head';
-    badgeHead.innerHTML = event.title;
-    badgeDiv.appendChild(badgeHead);
+    badgeDiv.appendChild(createRowDiv('badge_head', event.title));
 
     //Badge Body
-    let badgeBody = document.createElement('div');
-    badgeBody.className = 'badge_body';
-    badgeBody.innerHTML = event.description;
-    badgeDiv.appendChild(badgeBody);
+    badgeDiv.appendChild(createRowDiv('badge_body', event.description));
 
     //Badge Footer
-    let badgeFooter = document.createElement('div');
-    badgeFooter.className = 'badge_footer';
-    badgeDiv.appendChild(badgeFooter);
-
+    let badgeFooter = createRowDiv('badge_footer');
     let eventTimeSet = getEventTimeSet(event.startTime, event.endTime);
+
     let footerLeft = createImgTxtDiv('images/clock.png', eventTimeSet);
     badgeFooter.appendChild(footerLeft);
 
     let footerRight = createImgTxtDiv('images/distance.png', distance);
     badgeFooter.appendChild(footerRight);
 
+    badgeDiv.appendChild(badgeFooter);
     return badgeDiv;
+}
+
+
+function createRowDiv(className, innerHtml) {
+    let badgeRowDiv = document.createElement('div');
+    badgeRowDiv.className = className ? className : 'badge_body';
+    badgeRowDiv.innerHTML = innerHtml ? innerHtml : '';
+
+    return badgeRowDiv;
 }
 
 function createTxtImgDiv(img, txt) {
