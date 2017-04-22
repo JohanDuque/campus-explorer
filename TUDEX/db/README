@@ -1,0 +1,15 @@
+# HOW TO IMPORT THE POSTGRES SQL DUMP
+
++ In the terminal, go to the /bin folder of your postgres installation (e.g. /Library/PostgresSQL/8.2/bin)
++ to create a new DB, enter the following command
+	cratedb -U <username> <dbname> (e.g., createdb -U postgres TIWDB)
+	
++ to import the SQL dump, enter the following command
+	psql -U <username> -d <dbname> < <sqldump> (e.g., psql -U postgres -d TIWDB < TIWDB_dump.sql
+	
+	
+Now the database will be accessible trough JDBC in your Java classes.
+
+# FINAL REMARKS
+
+DO NOT FORGET TO DOWNLOAD THE JDBC POSTGRES DRIVER AND TO COPY IT IN THE LIB FOLDER

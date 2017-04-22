@@ -1,0 +1,143 @@
+html {
+    height: 100%;
+}
+
+header,
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #00A6D6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+    background-color: #f7f7f7;
+    overflow: auto;
+    margin-bottom: 1.5em;
+}
+
+
+/******************* *************** *******************/
+/*********************** Badge Box **********************/
+/******************* *************** *******************/
+
+.badge_box {
+    position: relative;
+    box-shadow: 4px 4px 8px 4px #888888;
+    background: #fff;
+    color: #00A6D6;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em;
+    font-size: x-large;
+}
+
+.badge_head {
+    border-bottom: 1px solid gray;
+    font-weight: bold;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.badge_body {
+    margin: auto;
+    color: #004b61;
+    padding-bottom: 0.1em;
+}
+
+.badge_footer {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background: rgb(0, 40, 51);
+}
+
+.badge_footer_left {
+    text-align: center;
+}
+
+.distance_image {}
+
+.clock_image {}
+
+.badge_footer_right {
+    text-align: center;
+}
+
+
+/******************* *************** *******************/
+/******************* Image Text Div *******************/
+/******************* *************** *******************/
+
+.img_txt_container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    font-size: xx-large;
+}
+
+.img_txt_container_image {
+    padding: 0.2em;
+}
+
+.img_txt_container_text {
+    padding: 0.2em;
+}
+
+.logo {
+    padding: 2em;
+    width: 20%;
+}
+
+.centered_text {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    flex: 1;
+}
+
+
+/******************* *************** *******************/
+/*********************** Footer **********************/
+/******************* *************** *******************/
+
+.footer-text {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+  /*   margin: auto;
+    font-size: 3em;
+    color: white;
+    flex: 1;
+    font-weight: bold;
+    text-align: center; */
+}
+
+.arrow-button {
+    padding: 1em;
+    border-left: 3px solid white;
+}
+
+.arrow-right {
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 40px solid white;
+    margin-right: 2em;
+    margin-left: 2em;
+}
