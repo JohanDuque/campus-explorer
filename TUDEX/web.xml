@@ -12,13 +12,41 @@
 		<url-pattern>/helloWorld</url-pattern>
       </servlet-mapping>
       
-      
-      
       <servlet>
 	      <servlet-name>helloGET</servlet-name>
     	  	  <servlet-class>it.polimi.iol.duque.Hello_GET</servlet-class>
       </servlet>
-      
+
+
+
+    <!-- ================== Built In Filter Definitions ===================== -->
+
+    <filter>
+        <filter-name>CorsFilter</filter-name>
+        <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CorsFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- ==================== Built In Filter Mappings ====================== -->
+
+
+    <servlet>
+        <servlet-name>tudexServlet</servlet-name>
+        <servlet-class>it.polimi.iol.duque.TudexServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>tudexServlet</servlet-name>
+        <url-pattern>/tudexServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
       <servlet>
 	      <servlet-name>helloPOST</servlet-name>
     	  <servlet-class>it.polimi.iol.duque.Hello_POST</servlet-class>
@@ -99,14 +127,14 @@
         
        
        
-       <!-- ESERCIZIO BASE DI DATI -->
+       <!-- DB Parameters -->
        <context-param>
     			<param-name>username</param-name>
-	    		<param-value>alessandrobozzon</param-value>
+	    		<param-value>Duque</param-value>
    		</context-param>
 		<context-param>
     			<param-name>password</param-name>
-	    		<param-value></param-value>
+	    		<param-value>postgres</param-value>
    		</context-param>
    		<context-param>
     			<param-name>dbDriver</param-name>
@@ -114,9 +142,13 @@
    		</context-param>
    		<context-param>
     			<param-name>dbURL</param-name>
-	    		<param-value>jdbc:postgresql://localhost:5432/TIWDB</param-value>
+	    		<param-value>jdbc:postgresql://localhost:5432/tudex</param-value>
    		</context-param>
-  
+
+
+
+
+
   		<servlet>
         	<servlet-name>CreaMes</servlet-name>
         	<servlet-class>it.polimi.iol.duque.CreaMessaggio</servlet-class>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="tiwdb@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.0">
+    <root id="1"/>
+    <database id="2" parent="1" name="tiwdb">
+      <ObjectId>16387</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-04-28.12:41:33.693</IntrospectionTimestamp>
+      <IntrospectionStateNumber>885</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="5" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="6" parent="2" name="pg_temp_1">
+      <ObjectId>11848</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11849</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="information_schema">
+      <ObjectId>12381</ObjectId>
+    </schema>
+    <sequence id="9" parent="3" name="argsequence_seq">
+      <ObjectId>16388</ObjectId>
+      <StateNumber>871</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="10" parent="3" name="messsequence_seq">
+      <ObjectId>16397</ObjectId>
+      <StateNumber>874</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="11" parent="3" name="usersequence_seq">
+      <ObjectId>16406</ObjectId>
+      <StateNumber>877</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <table id="12" parent="3" name="argomentotable">
+      <ObjectId>16390</ObjectId>
+      <StateNumber>873</StateNumber>
+    </table>
+    <table id="13" parent="3" name="messaggiotable">
+      <ObjectId>16399</ObjectId>
+      <StateNumber>876</StateNumber>
+    </table>
+    <table id="14" parent="3" name="usertable">
+      <ObjectId>16408</ObjectId>
+      <StateNumber>879</StateNumber>
+    </table>
+    <column id="15" parent="12" name="oid_2">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>873</StateNumber>
+      <DefaultExpression>nextval(&apos;argsequence_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="16" parent="12" name="nome">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>873</StateNumber>
+    </column>
+    <column id="17" parent="12" name="descrizione">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>873</StateNumber>
+    </column>
+    <index id="18" parent="12" name="argomentotable_pkey">
+      <ObjectId>16415</ObjectId>
+      <ColNames>oid_2</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="19" parent="12" name="argomentotable_pkey">
+      <ObjectId>16416</ObjectId>
+      <ColNames>oid_2</ColNames>
+      <UnderlyingIndexName>argomentotable_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="20" parent="13" name="oid_2">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>876</StateNumber>
+      <DefaultExpression>nextval(&apos;messsequence_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="21" parent="13" name="titolo">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>876</StateNumber>
+    </column>
+    <column id="22" parent="13" name="corpo">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>876</StateNumber>
+    </column>
+    <column id="23" parent="13" name="data_ora">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>876</StateNumber>
+    </column>
+    <column id="24" parent="13" name="useroid">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>876</StateNumber>
+    </column>
+    <column id="25" parent="13" name="messaggioid">
+      <Position>6</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>876</StateNumber>
+    </column>
+    <column id="26" parent="13" name="argomentooid">
+      <Position>7</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>876</StateNumber>
+    </column>
+    <index id="27" parent="13" name="messaggiotable_pkey">
+      <ObjectId>16417</ObjectId>
+      <ColNames>oid_2</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="28" parent="13" name="messaggiotable_pkey">
+      <ObjectId>16418</ObjectId>
+      <ColNames>oid_2</ColNames>
+      <UnderlyingIndexName>messaggiotable_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="29" parent="14" name="oid_2">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>879</StateNumber>
+      <DefaultExpression>nextval(&apos;usersequence_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="30" parent="14" name="username">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>879</StateNumber>
+    </column>
+    <column id="31" parent="14" name="password">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>879</StateNumber>
+    </column>
+    <column id="32" parent="14" name="email">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>879</StateNumber>
+    </column>
+    <column id="33" parent="14" name="groupoid">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>879</StateNumber>
+    </column>
+    <index id="34" parent="14" name="usertable_pkey">
+      <ObjectId>16419</ObjectId>
+      <ColNames>oid_2</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="35" parent="14" name="usertable_pkey">
+      <ObjectId>16420</ObjectId>
+      <ColNames>oid_2</ColNames>
+      <UnderlyingIndexName>usertable_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
