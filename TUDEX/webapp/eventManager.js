@@ -5,7 +5,6 @@ function manageEvents(events, position) {
 
     events.forEach(function(event) {
         const METERS_100 = 100;
-        const DISTANCE_TOLERANCE = 42;
 
         let distance = getDistanceFromLatLonInMeters(event.coords.latitude, event.coords.longitude, position.coords.latitude, position.coords.longitude);
 
@@ -16,7 +15,7 @@ function manageEvents(events, position) {
 
         if(event.type ==="BONUS"){
             console.error(event.title + " -> " + getEventTimeSet(event.startTime, event.endTime) + " # " + distance);
-            if (distance <= DISTANCE_TOLERANCE && isEventInADaySlot(event)) {
+            if (distance <= METERS_100 && isEventInADaySlot(event)) {
                 appenDivToContent(createBonusDiv(event));
                 flamesCount = flamesCount + event.points;
             }

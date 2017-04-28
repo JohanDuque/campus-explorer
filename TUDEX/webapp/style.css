@@ -2,8 +2,7 @@ html {
     height: 100%;
 }
 
-header,
-footer {
+header {
     display: flex;
     flex-direction: row;
     background-color: #00A6D6;
@@ -133,6 +132,11 @@ body {
 /*********************** Footer **********************/
 /******************* *************** *******************/
 
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
 .footer-text {
     color: #fed952;
     background: rgb(0, 40, 51);
@@ -145,6 +149,13 @@ body {
 .arrow-button {
     padding: 1em;
     border-left: 3px solid white;
+     background-color: #00A6D6;
+}
+
+.arrow-button:active {
+    background-color: rgb(40, 119, 142);
+    box-shadow: 2px 2px 2px 2px #666;
+    transform: translateX(4px);
 }
 
 .arrow-right {
