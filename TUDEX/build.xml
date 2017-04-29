@@ -75,12 +75,15 @@
 			<mkdir dir="${deploy.path}/TUDEX"/>
 		
 			<copy todir="${deploy.path}/TUDEX" overwrite="true">
-						<fileset dir="${html.dir}">
+						<!--<fileset dir="${html.dir}">
 							<include name="**/*" />
 						</fileset>
 						<fileset dir="${jsp.dir}">
 							<include name="**/*" />
-						</fileset>
+						</fileset>-->
+				<fileset dir="${webapp.dir}">
+					<include name="**/*" />
+				</fileset>
 			</copy>
 		
 			<copy todir="${deploy.path}/TUDEX/WEB-INF/lib" overwrite="true">

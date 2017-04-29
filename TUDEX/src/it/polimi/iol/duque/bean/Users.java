@@ -1,14 +1,8 @@
 package it.polimi.iol.duque.bean;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
 /**
  * Created by Duque on 29/04/2017.
  */
-@Entity
 public class Users {
     private int id;
     private String username;
@@ -16,8 +10,6 @@ public class Users {
     private String faculty;
     private Integer points;
 
-    @Id
-    @Column(name = "id", nullable = false)
     public int getId() {
         return id;
     }
@@ -26,8 +18,6 @@ public class Users {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "username", nullable = true, length = 255)
     public String getUsername() {
         return username;
     }
@@ -36,8 +26,6 @@ public class Users {
         this.username = username;
     }
 
-    @Basic
-    @Column(name = "password", nullable = true, length = 255)
     public String getPassword() {
         return password;
     }
@@ -46,8 +34,6 @@ public class Users {
         this.password = password;
     }
 
-    @Basic
-    @Column(name = "faculty", nullable = true, length = 255)
     public String getFaculty() {
         return faculty;
     }
@@ -56,8 +42,6 @@ public class Users {
         this.faculty = faculty;
     }
 
-    @Basic
-    @Column(name = "points", nullable = true)
     public Integer getPoints() {
         return points;
     }

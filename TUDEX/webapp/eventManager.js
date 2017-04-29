@@ -6,7 +6,7 @@ function manageEvents(events, position) {
     events.forEach(function(event) {
         const METERS_100 = 100;
 
-        let distance = getDistanceFromLatLonInMeters(event.coords.latitude, event.coords.longitude, position.coords.latitude, position.coords.longitude);
+        let distance = getDistanceFromLatLonInMeters(event.latitude, event.longitude, position.coords.latitude, position.coords.longitude);
 
         //Debugging stuff
         //console.log(event);
@@ -17,7 +17,7 @@ function manageEvents(events, position) {
             console.error(event.title + " -> " + getEventTimeSet(event.startTime, event.endTime) + " # " + distance);
             if (distance <= METERS_100 && isEventInADaySlot(event)) {
                 appenDivToContent(createBonusDiv(event));
-                flamesCount = flamesCount + event.points;
+                flamesCount = flamesCount + event.flames;
             }
         }
 
@@ -25,7 +25,7 @@ function manageEvents(events, position) {
             if (distance <= METERS_100 && isEventInAnHourSlot(event)) {
                 let mtsDistance = parseInt(distance) + ' meters'; //gets the integer value and concats meters
                 appenDivToContent(createBagdeDiv(event, mtsDistance));
-                flamesCount = flamesCount + event.points;
+                flamesCount = flamesCount + event.flames;
             }
         }
     });
@@ -59,7 +59,7 @@ function createBonusDiv(event) {
     let bonusDiv = document.createElement('div');
     bonusDiv.className = 'badge_box';
 
-    let bonusImgDiv = createImgTxtDiv('images/fire_1.png', event.title + " "+event.points+'+ Flames!');
+    let bonusImgDiv = createImgTxtDiv('images/fire_1.png', event.title + " "+event.flames+'+ Flames!');
     bonusImgDiv.appendChild(createImgDiv('images/fire_1.png'));
 
     bonusImgDiv.className = 'bonus-div';

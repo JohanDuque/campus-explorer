@@ -1,4 +1,4 @@
-let events = [{
+let events_model = [{
     type: "NOTIFICATION",
     title: "Levon Vincent",
     description: "Deep scurissima da New York City via Berlino. Serata a cura di Le Cannibale.",

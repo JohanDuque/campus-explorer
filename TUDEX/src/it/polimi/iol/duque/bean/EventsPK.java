@@ -1,19 +1,15 @@
 package it.polimi.iol.duque.bean;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
 import java.io.Serializable;
 
 /**
- * Created by Duque on 29/04/2017.
+ * Created by Duque on 30/04/2017.
  */
 public class EventsPK implements Serializable {
     private String title;
     private long starttime;
     private long endtime;
 
-    @Column(name = "title", nullable = false, length = 255)
-    @Id
     public String getTitle() {
         return title;
     }
@@ -22,8 +18,6 @@ public class EventsPK implements Serializable {
         this.title = title;
     }
 
-    @Column(name = "starttime", nullable = false)
-    @Id
     public long getStarttime() {
         return starttime;
     }
@@ -32,13 +26,11 @@ public class EventsPK implements Serializable {
         this.starttime = starttime;
     }
 
-    @Column(name = "endtime", nullable = false)
-    @Id
-    public long getEndtime() {
+    public long getEndTime() {
         return endtime;
     }
 
-    public void setEndtime(long endtime) {
+    public void setEndTime(long endtime) {
         this.endtime = endtime;
     }
 

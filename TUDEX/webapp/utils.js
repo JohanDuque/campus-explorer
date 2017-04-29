@@ -1,4 +1,7 @@
 /*This woul be my start function, it gets browser's location and starts the application*/
+
+let events; // Global variable for events
+
 function start() {
     //prepareInsertStatements(events); //TODO helper function
     callTudexServlet();
@@ -20,6 +23,7 @@ function callTudexServlet() {
 
     var response = xhttp.responseText;//JSON.parse(xhttp.responseText);
     console.log(response);
+    events = JSON.parse(response);
 }
 
 function getPosition(position) {

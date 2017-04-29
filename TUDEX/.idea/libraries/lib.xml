@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/postgresql-8.4-701.jdbc3.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gson-2.8.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
