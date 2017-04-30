@@ -34,13 +34,13 @@
 
 
     <servlet>
-        <servlet-name>tudexServlet</servlet-name>
-        <servlet-class>it.polimi.iol.duque.TudexServlet</servlet-class>
+        <servlet-name>eventsServlet</servlet-name>
+        <servlet-class>it.polimi.iol.duque.EventsServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>tudexServlet</servlet-name>
-        <url-pattern>/tudexServlet</url-pattern>
+        <servlet-name>eventsServlet</servlet-name>
+        <url-pattern>/eventsServlet</url-pattern>
     </servlet-mapping>
 
 
