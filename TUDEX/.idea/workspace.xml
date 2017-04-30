@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f81610b7-377a-404a-a933-e34851128b62" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/TudexServlet.java" afterPath="$PROJECT_DIR$/src/it/polimi/iol/duque/EventsServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web.xml" afterPath="$PROJECT_DIR$/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/utils.js" afterPath="$PROJECT_DIR$/webapp/utils.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,11 +53,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -120,26 +128,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utils.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="utils.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapp/utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+            <state relative-caret-position="270">
+              <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
               <folding>
-                <marker date="1493507546000" expanded="true" signature="151:157" ph="{...}" />
-                <marker date="1493507546000" expanded="true" signature="227:297" ph="{...}" />
-                <marker date="1493507546000" expanded="true" signature="908:991" ph="{...}" />
+                <marker date="1493589358000" expanded="true" signature="151:157" ph="{...}" />
+                <marker date="1493589358000" expanded="true" signature="229:298" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eventManager.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/eventManager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="61" column="89" lean-forward="false" selection-start-line="61" selection-start-column="83" selection-end-line="61" selection-end-column="89" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -239,7 +236,6 @@
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/webapp/eventManager.js" />
         <option value="$PROJECT_DIR$/webapp/events.js" />
-        <option value="$PROJECT_DIR$/webapp/utils.js" />
         <option value="$PROJECT_DIR$/src/it/polimi/iol/duque/bean/Users.java" />
         <option value="$PROJECT_DIR$/src/it/polimi/iol/duque/bean/Events.java" />
         <option value="$PROJECT_DIR$/src/it/polimi/iol/duque/bean/EventsPK.java" />
@@ -247,6 +243,7 @@
         <option value="$PROJECT_DIR$/src/it/polimi/iol/duque/TudexServlet.java" />
         <option value="$PROJECT_DIR$/src/it/polimi/iol/duque/EventsServlet.java" />
         <option value="$PROJECT_DIR$/web.xml" />
+        <option value="$PROJECT_DIR$/webapp/utils.js" />
       </list>
     </option>
   </component>
@@ -1082,7 +1079,7 @@
       <workItem from="1492865292504" duration="26456000" />
       <workItem from="1493468064064" duration="7209000" />
       <workItem from="1493497632359" duration="2031000" />
-      <workItem from="1493499724198" duration="9462000" />
+      <workItem from="1493499724198" duration="9578000" />
     </task>
     <task id="LOCAL-00001" summary="Fullstack interaction (Back end gets events from DB, then send them to Frontend)">
       <created>1493508305284</created>
@@ -1095,7 +1092,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47131000" />
+    <option name="totallyTimeSpent" value="47247000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1200,13 +1197,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="96" lean-forward="false" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -1506,18 +1496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-          <folding>
-            <marker date="1493507546000" expanded="true" signature="151:157" ph="{...}" />
-            <marker date="1493507546000" expanded="true" signature="227:297" ph="{...}" />
-            <marker date="1493507546000" expanded="true" signature="908:991" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/bean/Users.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1594,6 +1572,25 @@
         <state relative-caret-position="225">
           <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="57" lean-forward="false" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+          <folding>
+            <marker date="1493589358000" expanded="true" signature="151:157" ph="{...}" />
+            <marker date="1493589358000" expanded="true" signature="229:298" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -4,7 +4,7 @@ let events; // Global variable for events
 
 function start() {
     //prepareInsertStatements(events); //TODO helper function
-    callTudexServlet();
+    callEventsServlet();
 
     console.log("Getting geolocation...");
     if (navigator.geolocation) {
@@ -14,10 +14,10 @@ function start() {
     }
 }
 
-function callTudexServlet() {
+function callEventsServlet() {
     //To make this CORS request work i had to enable CORS in Tomcat7
     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "http://localhost:8080/TUDEX/tudexServlet", false);
+    xhttp.open("GET", "http://localhost:8080/TUDEX/eventsServlet", false);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send();
 
