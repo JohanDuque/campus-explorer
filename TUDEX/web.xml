@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
-
-      <servlet>
-	      <servlet-name>helloWorld</servlet-name>
-    	  	  <servlet-class>it.polimi.iol.duque.HelloWorld</servlet-class>
-      </servlet>
-      
-      <servlet-mapping>
-      	<servlet-name>helloWorld</servlet-name>
-		<url-pattern>/helloWorld</url-pattern>
-      </servlet-mapping>
       
       <servlet>
 	      <servlet-name>helloGET</servlet-name>
@@ -41,6 +31,16 @@
     <servlet-mapping>
         <servlet-name>eventsServlet</servlet-name>
         <url-pattern>/eventsServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>statsServlet</servlet-name>
+        <servlet-class>it.polimi.iol.duque.StatsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>statsServlet</servlet-name>
+        <url-pattern>/statsServlet</url-pattern>
     </servlet-mapping>
 
 
