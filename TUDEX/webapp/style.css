@@ -231,3 +231,70 @@ footer {
     padding: 0.2em;
     flex: 1;
 }
+
+/******************* *************** *******************/
+/*********************** Login Box **********************/
+/******************* *************** *******************/
+.login_head {
+    border-bottom: 4px solid rgb(0, 40, 51);
+    color: rgb(0, 40, 51);
+    font-weight: bold;
+    font-size: xx-large;
+    padding: 1em;
+}
+
+.login_box {
+    position: relative;
+    box-shadow: 4px 4px 8px 4px #888888;
+    background: #fff;
+    color: #00A6D6;
+    margin: 50% 1em;
+    padding: 1em;
+    font-size: x-large;
+}
+
+.login_input_container {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    font-size: xx-large;
+    padding: 1.5em;
+}
+
+.login_input_txt {
+    padding: 0.2em;
+}
+
+.login_input {
+    flex: 1;
+    text-align: center;
+    height: 100%;
+    font-size: xx-large;
+    color: #00a6d6;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: initial;
+    border-image: initial;
+}
+
+.login_button {
+    box-shadow: 0px 4px 4px 2px rgb(0, 166, 214);
+    background: rgb(0, 40, 51);
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.login_button:active {
+    background-color: rgb(0, 166, 214);
+    transform: translateY(4px);
+}
+
+.login_footer{
+    color: #fed952;
+    background: rgb(0, 40, 51);
+    font-weight: bold;
+    width: 100%;
+    padding-bottom: 10%;
+}

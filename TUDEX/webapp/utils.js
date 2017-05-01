@@ -2,6 +2,7 @@
 
 let events; // Global variable for events
 let stats; // Global variable for stats
+let currentUser;// Global variable for currentUser stored in local storage to keep it in other pages
 
 function start() {
     //prepareInsertStatements(events); //TODO remove, i just used it to easy create DB Insert statement
@@ -36,12 +37,33 @@ function callStatsServlet() {
     var response = xhttp.responseText;
     console.log(response);
     stats = JSON.parse(response);
-    manageStats();
+
+    currentUser = localStorage.currentUser ? JSON.parse(localStorage.currentUser) : null ;
+    manageStats(currentUser);
+}
+
+function callLoginServlet(username, password) {
+    var xhttp = new XMLHttpRequest();
+    var params = "?username=" + username + "&password="+password;
+
+    xhttp.open("POST", "http://localhost:8080/TUDEX/loginServlet"+params, false);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+
+    var response = xhttp.responseText;
+    console.log(response);
+    var currentUserJson = JSON.parse(response);
+
+    localStorage.currentUser = JSON.stringify(currentUserJson);
+
+    window.location.href='index.html';
 }
 
 function getPosition(position) {
     console.log("Starting application...");
-    manageEvents(events, position);
+    currentUser = localStorage.currentUser ? JSON.parse(localStorage.currentUser) : null ;
+
+    manageEvents(currentUser, events, position);
 }
 
 function getEventTimeSet(startTime, endTime) {

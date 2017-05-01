@@ -1,13 +1,13 @@
 /**
  * Created by Duque on 01/05/2017.
  */
-function manageStats() {
+function manageStats(currentUser) {
     sortStatsByUserPoints();
 
     let tudexBox = createStatsBox(stats, "Tudelf");
     appenDivToContent(tudexBox);
 
-    let currentUserFaculty = "IOL"; //TODO get form DB
+    let currentUserFaculty = currentUser.faculty; //TODO get form DB
 
     let facultyStats = stats.filter(function(stat) {
         return stat.faculty === currentUserFaculty;
@@ -21,7 +21,6 @@ function manageStats() {
 }
 
 let createStatsBox = function (stats, boxTitle) {
-    let currentUsername = 'Peter';//TODO get it form servlet
     let i = 1;
 
     let badgeBox = document.createElement('div');
@@ -39,7 +38,7 @@ let createStatsBox = function (stats, boxTitle) {
         let statDiv = createDoubleTxtImgDiv('images/fire_1.png', statsText, stat.points);
 
         //In this way i highlight the current user
-        if (stat.username === currentUsername) {
+        if (stat.username === currentUser.username) {
             statDiv.style.color = "#fed952";
             statDiv.style.fontWeight = "bold";
         }

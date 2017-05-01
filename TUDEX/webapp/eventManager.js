@@ -1,10 +1,8 @@
 /**
  * Created by Duque on 28/04/2017.
  */
-function manageEvents(events, position) {
-
-    let flamesCount = 42;//TODO get real flames count for current user
-
+function manageEvents(currentUser, events, position) {
+    let flamesCount = currentUser ? currentUser.points : 0;
 
     events.forEach(function(event) {
         const METERS_100 = 100;
@@ -131,9 +129,9 @@ function createImgDiv(img) {
     return imgDiv;
 }
 
-function createTxtDiv(txt) {//FIXME is equal to createRowDiv
+function createTxtDiv(txt, className) {
     let txtDiv = document.createElement('div');
-    txtDiv.className = 'img_txt_container_text';
+    txtDiv.className = className ? className : 'img_txt_container_text';
     txtDiv.innerHTML = txt;
 
     return txtDiv;
