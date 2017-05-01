@@ -1,7 +1,7 @@
 package it.polimi.iol.duque;
 
-import it.polimi.iol.duque.bean.Events;
-import it.polimi.iol.duque.bean.Users;
+import it.polimi.iol.duque.model.Events;
+import it.polimi.iol.duque.model.Users;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;

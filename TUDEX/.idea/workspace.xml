@@ -2,16 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f81610b7-377a-404a-a933-e34851128b62" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapp/loginManager.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/Main.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/CookieExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/CreaMessaggio.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/DBHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/HelloWorld.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/Hello_GET.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/Hello_POST.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/RedirectOrForward.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/ServerSnoop.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/SessionTracker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/ShoppingCartViewerHidden.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/ShoppingCartViewerSession.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/TudexServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/bean/Events.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/bean/EventsPK.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/bean/HelloBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/bean/Impiccato.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/bean/NumberGuessBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/bean/Users.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/hibernate.cfg.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/TIWDB2_dump.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/esame.mdb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/buyItems.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/form_GET.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/form_POST.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/form_POST_JSP.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/sl_index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsp/Impiccato.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsp/helloWorld.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsp/helloWorldBean_1.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsp/helloWorldBean_2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsp/helloWorld_1.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsp/helloWorld_2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsp/indice.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsp/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsp/messaggi.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsp/numguess.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsp/nuovo.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsp/test" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/CookieExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/CreaMessaggio.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/HelloWorld.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/Hello_GET.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/Hello_POST.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/RedirectOrForward.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/ServerSnoop.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/SessionTracker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/ShoppingCartViewerHidden.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/ShoppingCartViewerSession.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/bean/Events.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/bean/EventsPK.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/bean/HelloBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/bean/Impiccato.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/bean/NumberGuessBean.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/bean/Users.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/CookieExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/CreaMessaggio.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/HelloWorld.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/Hello_GET.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/Hello_POST.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/RedirectOrForward.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/ServerSnoop.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/SessionTracker.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/ShoppingCartViewerHidden.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/ShoppingCartViewerSession.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/bean/HelloBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/bean/Impiccato.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/bean/NumberGuessBean.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/images/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/test.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/bean/Events.java" afterPath="$PROJECT_DIR$/src/it/polimi/iol/duque/model/Events.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/bean/EventsPK.java" afterPath="$PROJECT_DIR$/src/it/polimi/iol/duque/model/EventsPK.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/bean/Users.java" afterPath="$PROJECT_DIR$/src/it/polimi/iol/duque/model/Users.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/DBManager.class" afterPath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/DBManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/EventsServlet.class" afterPath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/EventsServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/StatsServlet.class" afterPath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/StatsServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/dist/TUDEX.jar" afterPath="$PROJECT_DIR$/bin/dist/TUDEX.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/jar/TUDEX.jar" afterPath="$PROJECT_DIR$/bin/jar/TUDEX.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/DBManager.class" afterPath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/DBManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/EventsServlet.class" afterPath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/EventsServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/StatsServlet.class" afterPath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/StatsServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/eventManager.js" afterPath="$PROJECT_DIR$/webapp/eventManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/statsManager.js" afterPath="$PROJECT_DIR$/webapp/statsManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/style.css" afterPath="$PROJECT_DIR$/webapp/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/utils.js" afterPath="$PROJECT_DIR$/webapp/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/im.properties" afterPath="$PROJECT_DIR$/im.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/DBManager.java" afterPath="$PROJECT_DIR$/src/it/polimi/iol/duque/DBManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/EventsServlet.java" afterPath="$PROJECT_DIR$/src/it/polimi/iol/duque/EventsServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/LoginServlet.java" afterPath="$PROJECT_DIR$/src/it/polimi/iol/duque/LoginServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/it/polimi/iol/duque/StatsServlet.java" afterPath="$PROJECT_DIR$/src/it/polimi/iol/duque/StatsServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web.xml" afterPath="$PROJECT_DIR$/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,31 +168,18 @@
           <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="446">
-                  <caret line="52" column="34" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="34" />
+                <state relative-caret-position="-199">
+                  <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CreaMessaggio.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/CreaMessaggio.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="128">
-                  <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="67" selection-end-column="8" />
-                  <folding>
-                    <marker date="1493499574000" expanded="true" signature="2436:2477" ph="SELECT MAX(O... MESSAGGIOTABLE" />
-                    <marker date="1493499574000" expanded="true" signature="2855:2953" ph="INSERT INTO MESSAGGIOTABLE... " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/LoginServlet.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="330">
-                  <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+                  <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -123,12 +189,12 @@
             <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/DBManager.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="180">
-                  <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+                  <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <marker date="1493646563000" expanded="true" signature="1612:1632" ph="SELECT * FRO... events" />
-                    <marker date="1493646563000" expanded="true" signature="2915:2934" ph="SELECT * FRO... users" />
-                    <marker date="1493646563000" expanded="true" signature="3964:4015" ph="SELECT * FRO... users" />
+                    <marker date="1493665100000" expanded="true" signature="1614:1634" ph="SELECT * FRO... events" />
+                    <marker date="1493665100000" expanded="true" signature="2917:2936" ph="SELECT * FRO... users" />
+                    <marker date="1493665100000" expanded="true" signature="3966:4017" ph="SELECT * FRO... users" />
                   </folding>
                 </state>
               </provider>
@@ -139,6 +205,16 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="401">
                   <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="33" selection-end-column="9" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="im.properties" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/im.properties">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -158,10 +234,11 @@
             <entry file="file://$PROJECT_DIR$/webapp/utils.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="405">
-                  <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+                  <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
                   <folding>
                     <marker date="1493664181000" expanded="true" signature="292:298" ph="{...}" />
                     <marker date="1493664181000" expanded="true" signature="412:481" ph="{...}" />
+                    <marker date="1493664181000" expanded="true" signature="1559:2051" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -172,7 +249,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="435">
                   <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
-                  <folding />
+                  <folding>
+                    <marker date="1493660329000" expanded="true" signature="136:993" ph="{...}" />
+                    <marker date="1493660329000" expanded="true" signature="1038:1318" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -182,16 +262,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="312">
                   <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="63" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="CookieExample.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/CookieExample.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-72">
-                  <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -238,7 +308,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-273">
                   <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-                  <folding />
+                  <folding>
+                    <marker date="1493663367000" expanded="true" signature="714:1573" ph="{...}" />
+                    <marker date="1493663367000" expanded="true" signature="1068:1504" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -262,7 +335,7 @@
             <entry file="file://$PROJECT_DIR$/webapp/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="390">
-                  <caret line="26" column="40" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="26" selection-end-column="40" />
+                  <caret line="26" column="40" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="26" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -335,7 +408,6 @@
         <option value="$PROJECT_DIR$/src/it/polimi/iol/duque/CreaMessaggio.java" />
         <option value="$PROJECT_DIR$/src/it/polimi/iol/duque/DBHelper.java" />
         <option value="dbtable:/e7c51c64/d39f3b1d-182d-4851-9f88-368aaf8879cc/tudex.public.events" />
-        <option value="$PROJECT_DIR$/im.properties" />
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/webapp/events.js" />
         <option value="$PROJECT_DIR$/src/it/polimi/iol/duque/bean/Events.java" />
@@ -347,8 +419,6 @@
         <option value="$PROJECT_DIR$/webapp/index.html" />
         <option value="$PROJECT_DIR$/webapp/stats.html" />
         <option value="$PROJECT_DIR$/src/it/polimi/iol/duque/bean/Users.java" />
-        <option value="$PROJECT_DIR$/src/it/polimi/iol/duque/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/web.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d39f3b1d-182d-4851-9f88-368aaf8879cc/console.sql" />
         <option value="$PROJECT_DIR$/src/it/polimi/iol/duque/DBManager.java" />
         <option value="$PROJECT_DIR$/webapp/loginManager.js" />
@@ -357,6 +427,9 @@
         <option value="$PROJECT_DIR$/webapp/style.css" />
         <option value="$PROJECT_DIR$/webapp/login.html" />
         <option value="$PROJECT_DIR$/webapp/utils.js" />
+        <option value="$PROJECT_DIR$/src/it/polimi/iol/duque/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/web.xml" />
+        <option value="$PROJECT_DIR$/im.properties" />
       </list>
     </option>
   </component>
@@ -416,60 +489,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TUDEX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TUDEX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TUDEX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TUDEX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="duque" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TUDEX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TUDEX" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="duque" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bean" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -490,7 +509,7 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="JPA.DatabaseSchemaImportDialog" value="d39f3b1d-182d-4851-9f88-368aaf8879cc" />
     <property name="FullScreen" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="eve&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/webapp/eventManager.js&#10;sta&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/webapp/statsManager.js&#10;we&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/web.xml&#10;He&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/src/it/polimi/iol/duque/Hello_POST.java&#10;Stat&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/src/it/polimi/iol/duque/StatsServlet.java&#10;use&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/src/it/polimi/iol/duque/bean/Users.java&#10;bu&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/build.xml&#10;im&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/im.properties&#10;Tu&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/src/it/polimi/iol/duque/TudexServlet.java&#10;bui&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/build.xml" />
+    <property name="SearchEverywhereHistoryKey" value="im&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/im.properties&#10;eve&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/webapp/eventManager.js&#10;sta&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/webapp/statsManager.js&#10;we&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/web.xml&#10;He&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/src/it/polimi/iol/duque/Hello_POST.java&#10;Stat&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/src/it/polimi/iol/duque/StatsServlet.java&#10;use&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/src/it/polimi/iol/duque/bean/Users.java&#10;bu&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/build.xml&#10;Tu&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/src/it/polimi/iol/duque/TudexServlet.java&#10;bui&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/build.xml" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -1196,7 +1215,7 @@
       <workItem from="1492865292504" duration="26456000" />
       <workItem from="1493468064064" duration="7209000" />
       <workItem from="1493497632359" duration="2031000" />
-      <workItem from="1493499724198" duration="40681000" />
+      <workItem from="1493499724198" duration="41148000" />
     </task>
     <task id="LOCAL-00001" summary="Fullstack interaction (Back end gets events from DB, then send them to Frontend)">
       <created>1493508305284</created>
@@ -1212,11 +1231,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493646654832</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Login Implemented">
+      <created>1493664913740</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1493664913740</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78350000" />
+    <option name="totallyTimeSpent" value="78817000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1242,7 +1268,7 @@
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.092185594" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.040903542" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1923077" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36792454" sideWeight="0.72649574" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.497558" order="6" side_tool="false" content_ui="tabs" />
@@ -1277,7 +1303,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fullstack interaction (Back end gets events from DB, then send them to Frontend)" />
     <MESSAGE value="LoginServelet created" />
-    <option name="LAST_COMMIT_MESSAGE" value="LoginServelet created" />
+    <MESSAGE value="Login Implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login Implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1310,27 +1337,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jsp/indice.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsp/messaggi.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3ad39877-6df7-4f19-bbcc-20eae54d8538/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="33" lean-forward="true" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/7584a844/d39f3b1d-182d-4851-9f88-368aaf8879cc/tudex.public.users" />
     <entry file="dbDummy://dbtable:/7584a844/d39f3b1d-182d-4851-9f88-368aaf8879cc/tudex.public.events" />
     <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/bean/Messaggiotable.java" />
@@ -1374,24 +1380,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/bean/HelloBean.java">
+    <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/model/HelloBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/bean/Impiccato.java">
+    <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/model/Impiccato.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1485">
           <caret line="101" column="2" lean-forward="false" selection-start-line="101" selection-start-column="2" selection-end-line="101" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/bean/NumberGuessBean.java">
+    <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/model/NumberGuessBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1442,14 +1450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/im.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/events.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1458,7 +1458,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/bean/Events.java">
+    <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/model/Events.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
@@ -1466,7 +1466,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/bean/EventsPK.java">
+    <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/model/EventsPK.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
@@ -1501,7 +1501,7 @@
           <caret line="31" column="30" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="31" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1493594413000" expanded="true" signature="144:165" ph="..." />
+            <marker date="1493665100000" expanded="true" signature="145:166" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1514,14 +1514,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/bean/Users.java">
+    <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/model/Users.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
           <folding>
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1580,17 +1580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="67" selection-end-column="8" />
-          <folding>
-            <marker date="1493499574000" expanded="true" signature="2436:2477" ph="SELECT MAX(O... MESSAGGIOTABLE" />
-            <marker date="1493499574000" expanded="true" signature="2855:2953" ph="INSERT INTO MESSAGGIOTABLE... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="52" column="34" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1606,12 +1595,12 @@
     <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1493646563000" expanded="true" signature="1612:1632" ph="SELECT * FRO... events" />
-            <marker date="1493646563000" expanded="true" signature="2915:2934" ph="SELECT * FRO... users" />
-            <marker date="1493646563000" expanded="true" signature="3964:4015" ph="SELECT * FRO... users" />
+            <marker date="1493665100000" expanded="true" signature="1614:1634" ph="SELECT * FRO... events" />
+            <marker date="1493665100000" expanded="true" signature="2917:2936" ph="SELECT * FRO... users" />
+            <marker date="1493665100000" expanded="true" signature="3966:4017" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
@@ -1619,7 +1608,7 @@
     <entry file="file://$PROJECT_DIR$/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="26" column="40" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="26" selection-end-column="40" />
+          <caret line="26" column="40" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="26" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1636,7 +1625,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
-          <folding />
+          <folding>
+            <marker date="1493660329000" expanded="true" signature="136:993" ph="{...}" />
+            <marker date="1493660329000" expanded="true" signature="1038:1318" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1652,7 +1644,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-273">
           <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-          <folding />
+          <folding>
+            <marker date="1493663367000" expanded="true" signature="714:1573" ph="{...}" />
+            <marker date="1493663367000" expanded="true" signature="1068:1504" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1688,18 +1683,56 @@
     <entry file="file://$PROJECT_DIR$/webapp/utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
             <marker date="1493664181000" expanded="true" signature="292:298" ph="{...}" />
             <marker date="1493664181000" expanded="true" signature="412:481" ph="{...}" />
+            <marker date="1493664181000" expanded="true" signature="1559:2051" ph="{...}" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/images/background.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/it/polimi/iol/duque/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/im.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

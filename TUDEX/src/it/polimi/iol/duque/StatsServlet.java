@@ -1,7 +1,7 @@
 package it.polimi.iol.duque;
 
 import com.google.gson.Gson;
-import it.polimi.iol.duque.bean.Users;
+import it.polimi.iol.duque.model.Users;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;

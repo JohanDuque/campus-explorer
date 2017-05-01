@@ -2,7 +2,7 @@ package it.polimi.iol.duque;
 
 
 import com.google.gson.Gson;
-import it.polimi.iol.duque.bean.Events;
+import it.polimi.iol.duque.model.Events;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
