@@ -104,4 +104,38 @@ public class DBManager {
 
         return users;
     }
+
+    public static Users getUser(String username, String password) {
+        Users user = new Users();
+
+        try {
+
+            String query = "SELECT * FROM users WHERE username=? AND password=?";
+            PreparedStatement statement = connection.prepareStatement(query);
+            statement.setString(1, username);
+            statement.setString(2, password);
+
+            ResultSet rs = statement.executeQuery();
+            while (rs.next()) {
+
+                user.setId(rs.getInt("id"));
+                user.setUsername(rs.getString("username"));
+                user.setSurname(rs.getString("surname"));
+                user.setPoints(rs.getInt("points"));
+                user.setFaculty(rs.getString("faculty"));
+
+            }
+            rs.close();
+
+            statement.close();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            String errMsg = "An error occurred while getting users: " + ex.getMessage();
+            System.err.println(errMsg);
+        }
+
+        return user;
+    }
+
 }

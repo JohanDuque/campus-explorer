@@ -15,6 +15,9 @@ function manageStats() {
 
     let facultyBox = createStatsBox(facultyStats, currentUserFaculty);
     appenDivToContent(facultyBox);
+
+    let flamesFooterDiv = createTxtImgDiv('images/fire_1.png', 'Top Campus Explorers');
+    document.body.getElementsByClassName('footer-text')[0].appendChild(flamesFooterDiv);
 }
 
 let createStatsBox = function (stats, boxTitle) {
@@ -61,17 +64,13 @@ function createDoubleTxtImgDiv(img, txt1, txt2) {
 }
 
 function sortStatsByUserPoints() {
-    stats.sort(compare);
+    stats.sort(compareUserPoints);
 }
 
-function compare(a, b) {
+function compareUserPoints(a, b) {
     if (a.points > b.points)
         return -1;
     if (a.points < b.points)
         return 1;
     return 0;
-}
-
-function filterByUserFaculty( stat ) {
-    return stat.faculty === currentUserFaculty;
 }
