@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f81610b7-377a-404a-a933-e34851128b62" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/DBManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/EventsServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/LoginServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/StatsServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/UsersServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/model/Events.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/model/EventsPK.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/classes/it/polimi/iol/duque/model/Users.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/dist/TUDEX.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/jar/TUDEX.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/DBManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/EventsServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/LoginServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/StatsServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/model/Events.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/model/EventsPK.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/TUDEX/it/polimi/iol/duque/model/Users.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webapp/images/distance.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../documentation/tudex_public_events.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../documentation/tudex_public_users.sql" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -299,8 +283,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
     <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="height" value="974" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -382,7 +367,6 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="JPA.DatabaseSchemaImportDialog" value="d39f3b1d-182d-4851-9f88-368aaf8879cc" />
-    <property name="FullScreen" value="true" />
     <property name="SearchEverywhereHistoryKey" value="uti&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/webapp/utils.js&#10;in&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/webapp/index.html&#10;we&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/web.xml&#10;lo&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/src/it/polimi/iol/duque/LoginServlet.java&#10;sta&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/src/it/polimi/iol/duque/StatsServlet.java&#10;im&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/im.properties&#10;eve&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/webapp/eventManager.js&#10;He&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/src/it/polimi/iol/duque/Hello_POST.java&#10;Stat&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/src/it/polimi/iol/duque/StatsServlet.java&#10;use&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/src/it/polimi/iol/duque/bean/Users.java&#10;bu&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/build.xml&#10;Tu&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/src/it/polimi/iol/duque/TudexServlet.java&#10;bui&#9;FILE&#9;file:///Users/duque/MyStuff/PoliMi/WebTecnologies/PrimaProva/campus-explorer/TUDEX/build.xml" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -1089,7 +1073,7 @@
       <workItem from="1492865292504" duration="26456000" />
       <workItem from="1493468064064" duration="7209000" />
       <workItem from="1493497632359" duration="2031000" />
-      <workItem from="1493499724198" duration="46952000" />
+      <workItem from="1493499724198" duration="47298000" />
     </task>
     <task id="LOCAL-00001" summary="Fullstack interaction (Back end gets events from DB, then send them to Frontend)">
       <created>1493508305284</created>
@@ -1119,11 +1103,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493670199564</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="obsolete code deleted">
+      <created>1493671903143</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1493671903143</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84621000" />
+    <option name="totallyTimeSpent" value="84967000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1135,12 +1126,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="22" width="1680" height="974" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40985325" sideWeight="0.2771673" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4088785" sideWeight="0.2771673" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.497558" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1151,7 +1142,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08424909" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40985325" sideWeight="0.72283274" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4567757" sideWeight="0.72283274" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.497558" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.490232" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1186,7 +1177,8 @@
     <MESSAGE value="LoginServelet created" />
     <MESSAGE value="Login Implemented" />
     <MESSAGE value="User point update function implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="User point update function implemented" />
+    <MESSAGE value="obsolete code deleted" />
+    <option name="LAST_COMMIT_MESSAGE" value="obsolete code deleted" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
