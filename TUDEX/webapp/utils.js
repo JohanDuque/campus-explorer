@@ -8,8 +8,15 @@ function start() {
     //prepareInsertStatements(events); //This would be the function to update events on DB
     callEventsServlet();
 
-
-    useGeolocation();//Enable if you want to use browser's geolocation
+    //In this case I'm using my current position to see the events, i have configured in my local database
+    let position = {
+        coords: {
+            latitude: 45.615887099999995,
+            longitude: 9.4587554
+        }
+    };
+    getPosition(position);
+    //useGeolocation();//Enable if you want to use browser's geolocation
 }
 
 function useGeolocation() {
@@ -40,15 +47,15 @@ function callStatsServlet() {
     var response = xhttp.responseText;
     stats = JSON.parse(response);
 
-    currentUser = localStorage.currentUser ? JSON.parse(localStorage.currentUser) : null ;
+    currentUser = localStorage.currentUser ? JSON.parse(localStorage.currentUser) : null;
     manageStats(currentUser);
 }
 
 function callLoginServlet(username, password) {
     var xhttp = new XMLHttpRequest();
-    var params = "?username=" + username + "&password="+password;
+    var params = "?username=" + username + "&password=" + password;
 
-    xhttp.open("POST", "http://localhost:8080/TUDEX/loginServlet"+params, false);
+    xhttp.open("POST", "http://localhost:8080/TUDEX/loginServlet" + params, false);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send();
 
@@ -58,7 +65,7 @@ function callLoginServlet(username, password) {
 
     localStorage.currentUser = JSON.stringify(currentUserJson);
 
-    window.location.href='index.html';
+    window.location.href = 'index.html';
 }
 
 function updateUserPoints(flamesCount) {
@@ -69,7 +76,7 @@ function updateUserPoints(flamesCount) {
     var xhttp = new XMLHttpRequest();
     var params = "?currentUser=" + userToPost;
 
-    xhttp.open("POST", "http://localhost:8080/TUDEX/usersServlet"+params, false);
+    xhttp.open("POST", "http://localhost:8080/TUDEX/usersServlet" + params, false);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send();
 
@@ -79,7 +86,7 @@ function updateUserPoints(flamesCount) {
 
 function getPosition(position) {
     console.log("Starting application...");
-    currentUser = localStorage.currentUser ? JSON.parse(localStorage.currentUser) : null ;
+    currentUser = localStorage.currentUser ? JSON.parse(localStorage.currentUser) : null;
 
     manageEvents(currentUser, events, position);
 }
@@ -117,7 +124,7 @@ function deg2rad(deg) {
 
 function prepareInsertStatements(events) { //Updates DB given an Event list (see events.js for example)
     let insertStm = "";
-    events.forEach(function(event) {
+    events.forEach(function (event) {
         insertStm += "\nINSERT INTO public.events(type, title, description, flames, coordinates, starttime, endtime) VALUES ( " + "'" + event.type + "'" + ", " + "'" + event.title + "'" + ", " + "'" + event.description + "'" + ", " + event.points + "," + "'" + "(" + event.coords.latitude + ", " + event.coords.longitude + ")" + "', " + event.startTime + ", " + event.endTime + ");";
     });
     console.log(insertStm);

@@ -2,32 +2,35 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <title>TUDEX (TUDelft Campus Explorer)</title>
     <script type="text/javascript" src="events.js"></script>
     <script type="text/javascript" src="utils.js"></script>
     <script type="text/javascript" src="eventManager.js"></script>
-    <script type="text/javascript">
-    start();
-    </script>
+
 </head>
 
 <body>
-    <header>
-        <img src="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/logo.svg" alt="logo" class="logo" />
-        <div class="centered_text">Campus Explorer</div>
-        <!-- I'm putting the following empty_div to balance the flex display distribution, in order to keep the header responsive -->
-        <div id="emty_div" class="logo" />
-    </header>
+<header>
+    <img src="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/logo.svg" alt="logo" class="logo"/>
+    <div class="centered_text">Campus Explorer</div>
+    <!-- I'm putting the following empty_div to balance the flex display distribution, in order to keep the header responsive -->
+    <div id="emty_div" class="logo"/>
+</header>
 
-    <div class="content"></div>
+<div class="content"></div>
 
-    <footer>
-        <div class="footer-text"></div>
-        <div class="arrow-button-right">
-            <div class="arrow-right" onclick="window.location.href='stats.html';"></div>
-        </div>
-    </footer>
+<footer>
+    <div class="footer-text"></div>
+    <div class="arrow-button-right">
+        <div class="arrow-right" onclick="window.location.href='stats.html';"></div>
+    </div>
+</footer>
 </body>
+
+<!--I'm calling this script at the end to ensure the qhole document has already been loaded-->
+<script type="text/javascript">
+    start();
+</script>
 
 </html>
