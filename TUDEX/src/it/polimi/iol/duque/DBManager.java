@@ -1,6 +1,7 @@
 package it.polimi.iol.duque;
 
 import it.polimi.iol.duque.bean.Events;
+import it.polimi.iol.duque.bean.Users;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
@@ -39,7 +40,7 @@ public class DBManager {
     }
 
 
-    public static List<Events> getAllEventsFromDB() {
+    public static List<Events> getAllEvents() {
         List<Events> events = new ArrayList();
 
         try {
@@ -71,5 +72,35 @@ public class DBManager {
             System.err.println(errMsg);
         }
         return events;
+    }
+
+    public static List<Users> getAllUsers() {
+        List users = new ArrayList<Users>();
+
+        try {
+            String query = "SELECT * FROM users";
+            PreparedStatement statement = connection.prepareStatement(query);
+            try (ResultSet rs = statement.executeQuery()) {
+                while (rs.next()) {
+
+                    Users user = new Users();
+                    user.setId(rs.getInt("id"));
+                    user.setUsername(rs.getString("username"));
+                    user.setPoints(rs.getInt("points"));
+                    user.setFaculty(rs.getString("faculty"));
+
+                    users.add(user);
+                }
+                rs.close();
+            }
+            statement.close();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            String errMsg = "An error occurred while getting users: " + ex.getMessage();
+            System.err.println(errMsg);
+        }
+
+        return users;
     }
 }

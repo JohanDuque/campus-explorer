@@ -1,6 +1,9 @@
+/**
+ * Created by Duque on 28/04/2017.
+ */
 function manageEvents(events, position) {
 
-    let flamesCount = 42;
+    let flamesCount = 42;//TODO get real flames count for current user
 
 
     events.forEach(function(event) {
@@ -128,7 +131,7 @@ function createImgDiv(img) {
     return imgDiv;
 }
 
-function createTxtDiv(txt) {
+function createTxtDiv(txt) {//FIXME is equal to createRowDiv
     let txtDiv = document.createElement('div');
     txtDiv.className = 'img_txt_container_text';
     txtDiv.innerHTML = txt;

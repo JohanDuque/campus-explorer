@@ -1,9 +1,10 @@
 /*This woul be my start function, it gets browser's location and starts the application*/
 
 let events; // Global variable for events
+let stats; // Global variable for stats
 
 function start() {
-    //prepareInsertStatements(events); //TODO helper function
+    //prepareInsertStatements(events); //TODO remove, i just used it to easy create DB Insert statement
     callEventsServlet();
 
     console.log("Getting geolocation...");
@@ -24,6 +25,18 @@ function callEventsServlet() {
     var response = xhttp.responseText;//JSON.parse(xhttp.responseText);
     console.log(response);
     events = JSON.parse(response);
+}
+
+function callStatsServlet() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "http://localhost:8080/TUDEX/statsServlet", false);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+
+    var response = xhttp.responseText;
+    console.log(response);
+    stats = JSON.parse(response);
+    manageStats();
 }
 
 function getPosition(position) {

@@ -146,13 +146,25 @@ footer {
     flex: 1;
 }
 
-.arrow-button {
+.arrow-button-right {
     padding: 1em;
-    border-left: 3px solid white;
-     background-color: #00A6D6;
+    border-left: 0.4em solid white;
+    background-color: #00A6D6;
 }
 
-.arrow-button:active {
+.arrow-button-right:active {
+    background-color: rgb(40, 119, 142);
+    box-shadow: 2px 2px 2px 2px #666;
+    transform: translateX(4px);
+}
+
+.arrow-button-left {
+    padding: 1em;
+    border-right: 0.4em solid white;
+    background-color: #00A6D6;
+}
+
+.arrow-button-left:active {
     background-color: rgb(40, 119, 142);
     box-shadow: 2px 2px 2px 2px #666;
     transform: translateX(4px);
@@ -164,4 +176,48 @@ footer {
     border-left: 40px solid white;
     margin-right: 2em;
     margin-left: 2em;
+}
+
+.arrow-left {
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 40px solid white;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+/******************* *************** *******************/
+/*********************** Stats Box **********************/
+/******************* *************** *******************/
+
+.stats_box {
+    position: relative;
+    background: #fff;
+    /* margin-top: 1.5em; */
+    /* margin-bottom: 1.5em; */
+    /* margin-left: 1em; */
+    /* margin-right: 1em; */
+    padding: 2em;
+    font-size: x-large;
+    height: 100%;
+    display: grid;
+    /* flex: 1; */
+}
+
+.double_txt_img_container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    font-size: xx-large;
+}
+
+.double_txt2{
+    padding: 0.2em;
+    text-align: center;
+}
+
+.double_txt1{
+    padding: 0.2em;
+    flex: 1;
 }

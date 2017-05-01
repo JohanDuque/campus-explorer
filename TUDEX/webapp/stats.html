@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stats</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" src="events.js"></script>
+    <script type="text/javascript" src="utils.js"></script>
+    <script type="text/javascript" src="statsManager.js"></script>
+    <script type="text/javascript" src="eventManager.js"></script>
+</head>
+
+<body>
+<header>
+    <img src="https://www.tudelft.nl/typo3conf/ext/tud_styling/Resources/Public/img/logo.svg" alt="logo" class="logo"/>
+    <div class="centered_text">Campus Explorer</div>
+    <!-- I'm putting the following empty_div to balance the flex display distribution, in order to keep the header responsive -->
+    <div id="emty_div" class="logo"/>
+</header>
+
+<div class="content"></div>
+
+<footer>
+    <div class="arrow-button-left">
+        <div class="arrow-left" onclick="window.location.href='index.html';"></div>
+    </div>
+    <div class="footer-text"></div>
+</footer>
+</body>
+
+<!--I'm calling this script at the end to ensure the qhole document has already been loaded-->
+<script type="text/javascript">
+    callStatsServlet();
+</script>
+</html>

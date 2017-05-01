@@ -18,31 +18,28 @@ import java.util.List;
  */
 public class EventsServlet extends HttpServlet {
 
-    private static final long serialVersionUID = -8284923385407221035L;
-
-    @Override
-    public void init(ServletConfig config) throws ServletException {
-        DBManager.initConnection(config);//Init database connection
-        super.init(config);
-    }
-
     public void doGet(HttpServletRequest req, HttpServletResponse response)
             throws ServletException, IOException {
 
-        // Output stream to STDOUT
-        PrintWriter out = response.getWriter();
+        response.setContentType("application/json");
+        PrintWriter out = response.getWriter();//It writes the response
 
-        List<Events> events = DBManager.getAllEventsFromDB();
+        List<Events> events = DBManager.getAllEvents();
         String eventsJson = new Gson().toJson(events); // Here I'm using Gson, one of the most popular JSON serializing libraries
 
         System.out.println(eventsJson);
 
-        response.setContentType("application/json");
         out.print(eventsJson);
     }
 
     public String getServletInfo() {
         return "Servlet that connects to PostgreSQL database and returns result of a SELECT (in this case a list of events)";
+    }
+
+    @Override
+    public void init(ServletConfig config) throws ServletException {
+        DBManager.initConnection(config);//Init database connection
+        super.init(config);
     }
 
 }
