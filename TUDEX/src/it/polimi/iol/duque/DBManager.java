@@ -138,4 +138,23 @@ public class DBManager {
         return user;
     }
 
+    public static void updateUserPoints(Users user) {
+        try {
+
+            String query = "UPDATE users SET points=? WHERE id=?";
+            PreparedStatement statement = connection.prepareStatement(query);
+            statement.setInt(1, user.getPoints());
+            statement.setInt(2, user.getId());
+
+            ResultSet rs = statement.executeQuery();
+            rs.close();
+
+            statement.close();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            String errMsg = "An error occurred while updating user: " + ex.getMessage();
+            System.err.println(errMsg);
+        }
+    }
 }

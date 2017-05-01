@@ -1,9 +1,11 @@
 package it.polimi.iol.duque.model;
 
+import java.io.Serializable;
+
 /**
  * Created by Duque on 29/04/2017.
  */
-public class Users {
+public class Users implements Serializable{
     private int id;
     private String username;
     private String surname;

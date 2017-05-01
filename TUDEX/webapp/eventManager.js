@@ -9,10 +9,10 @@ function manageEvents(currentUser, events, position) {
 
         let distance = getDistanceFromLatLonInMeters(event.latitude, event.longitude, position.coords.latitude, position.coords.longitude);
 
-        //Debugging stuff
-        //console.log(event);
-        // console.log(position);
-        console.log(event.title + " -> " + getEventTimeSet(event.startTime, event.endTime) + " # " + distance);
+        /*//Debugging stuff
+        console.log(event);
+        console.log(position);
+        console.log(event.title + " -> " + getEventTimeSet(event.startTime, event.endTime) + " # " + distance);*/
 
         if(event.type ==="BONUS"){
             console.error(event.title + " -> " + getEventTimeSet(event.startTime, event.endTime) + " # " + distance);
@@ -22,7 +22,7 @@ function manageEvents(currentUser, events, position) {
             }
         }
 
-        if(event.type ==="NOTIFICATION") {//TODO Constants
+        if(event.type ==="NOTIFICATION") {
             if (distance <= METERS_100 && isEventInAnHourSlot(event)) {
                 let mtsDistance = parseInt(distance) + ' meters'; //gets the integer value and concats meters
                 appenDivToContent(createBagdeDiv(event, mtsDistance));
@@ -32,6 +32,8 @@ function manageEvents(currentUser, events, position) {
     });
 
     let flamesFooterDiv = createTxtImgDiv('images/fire_1.png', 'Your Flame count: ' + flamesCount);
+
+    updateUserPoints(flamesCount);
     document.body.getElementsByClassName('footer-text')[0].appendChild(flamesFooterDiv);
 
 }
@@ -39,7 +41,7 @@ function manageEvents(currentUser, events, position) {
 function isEventInAnHourSlot(event) {
     const HOUR_IN_MILIS = 1000 * 60 * 60; //I'm using a constant here since an Hour will be always an hour :)
 
-    let nowTimestamp = 1492858623573; //TODO go back to Date.now();
+    let nowTimestamp = 1492858623573; //TODO go back to Date.now(); if you wanna work with dinamic time
     let fromNowToStart = event.startTime - nowTimestamp;
 
     return (nowTimestamp >= event.startTime && nowTimestamp <= event.endTime) || //Event has already started but hasn't finished yet OR
@@ -49,7 +51,7 @@ function isEventInAnHourSlot(event) {
 function isEventInADaySlot(event) {
     const DAY_IN_MILIS = 1000 * 60 * 60 *24;
 
-    let nowTimestamp = 1492858623573; //TODO go back to Date.now();
+    let nowTimestamp = 1492858623573; //TODO go back to Date.now(); if you want to work with dinamic date
     let fromNowToStart = event.startTime - nowTimestamp;
 
     return (nowTimestamp >= event.startTime && nowTimestamp <= event.endTime) || //Event has already started but hasn't finished yet OR

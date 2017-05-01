@@ -33,6 +33,16 @@
         <url-pattern>/loginServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>usersServlet</servlet-name>
+        <servlet-class>it.polimi.iol.duque.UsersServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>usersServlet</servlet-name>
+        <url-pattern>/usersServlet</url-pattern>
+    </servlet-mapping>
+
 
     <!-- DB Parameters -->
     <context-param>

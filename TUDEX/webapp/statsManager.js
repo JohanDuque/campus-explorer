@@ -7,7 +7,7 @@ function manageStats(currentUser) {
     let tudexBox = createStatsBox(stats, "Tudelf");
     appenDivToContent(tudexBox);
 
-    let currentUserFaculty = currentUser.faculty; //TODO get form DB
+    let currentUserFaculty = currentUser.faculty;
 
     let facultyStats = stats.filter(function(stat) {
         return stat.faculty === currentUserFaculty;

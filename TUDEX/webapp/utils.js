@@ -5,9 +5,14 @@ let stats; // Global variable for stats
 let currentUser;// Global variable for currentUser stored in local storage to keep it in other pages
 
 function start() {
-    //prepareInsertStatements(events); //TODO remove, i just used it to easy create DB Insert statement
+    //prepareInsertStatements(events); //This would be the function to update events on DB
     callEventsServlet();
 
+
+    useGeolocation();//Enable if you want to use browser's geolocation
+}
+
+function useGeolocation() {
     console.log("Getting geolocation...");
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(getPosition);
@@ -17,14 +22,12 @@ function start() {
 }
 
 function callEventsServlet() {
-    //To make this CORS request work i had to enable CORS in Tomcat7
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "http://localhost:8080/TUDEX/eventsServlet", false);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send();
 
-    var response = xhttp.responseText;//JSON.parse(xhttp.responseText);
-    console.log(response);
+    var response = xhttp.responseText;
     events = JSON.parse(response);
 }
 
@@ -35,7 +38,6 @@ function callStatsServlet() {
     xhttp.send();
 
     var response = xhttp.responseText;
-    console.log(response);
     stats = JSON.parse(response);
 
     currentUser = localStorage.currentUser ? JSON.parse(localStorage.currentUser) : null ;
@@ -57,6 +59,22 @@ function callLoginServlet(username, password) {
     localStorage.currentUser = JSON.stringify(currentUserJson);
 
     window.location.href='index.html';
+}
+
+function updateUserPoints(flamesCount) {
+    currentUser.points = flamesCount;
+
+    var userToPost = JSON.stringify(currentUser);
+
+    var xhttp = new XMLHttpRequest();
+    var params = "?currentUser=" + userToPost;
+
+    xhttp.open("POST", "http://localhost:8080/TUDEX/usersServlet"+params, false);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send();
+
+    var response = xhttp.responseText;
+    console.log(response);
 }
 
 function getPosition(position) {
@@ -97,7 +115,7 @@ function deg2rad(deg) {
     return deg * (Math.PI / 180)
 }
 
-function prepareInsertStatements(events) {
+function prepareInsertStatements(events) { //Updates DB given an Event list (see events.js for example)
     let insertStm = "";
     events.forEach(function(event) {
         insertStm += "\nINSERT INTO public.events(type, title, description, flames, coordinates, starttime, endtime) VALUES ( " + "'" + event.type + "'" + ", " + "'" + event.title + "'" + ", " + "'" + event.description + "'" + ", " + event.points + "," + "'" + "(" + event.coords.latitude + ", " + event.coords.longitude + ")" + "', " + event.startTime + ", " + event.endTime + ");";
