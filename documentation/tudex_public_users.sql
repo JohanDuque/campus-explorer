@@ -1,0 +1,13 @@
+INSERT INTO public.users (id, username, password, faculty, points, surname) VALUES (3, 'Johan', 'johan', 'IOL', 5135, 'Duque');
+INSERT INTO public.users (id, username, password, faculty, points, surname) VALUES (5, 'James', 'james', 'LAW', 432, 'Cameron');
+INSERT INTO public.users (id, username, password, faculty, points, surname) VALUES (11, 'Andy', 'andy', 'IOL', 1256, 'Warhol');
+INSERT INTO public.users (id, username, password, faculty, points, surname) VALUES (16, 'Studente', 'studente', 'IOL', 324, 'Bravo');
+INSERT INTO public.users (id, username, password, faculty, points, surname) VALUES (9, 'Aristotele', 'aristotele', 'Philosophy', 234, 'Aristotele');
+INSERT INTO public.users (id, username, password, faculty, points, surname) VALUES (10, 'Pitagora', 'pitagora', 'Philosophy', 2564, 'Pitagora');
+INSERT INTO public.users (id, username, password, faculty, points, surname) VALUES (12, 'Peter', 'peter', 'Music', 3733, 'Pan');
+INSERT INTO public.users (id, username, password, faculty, points, surname) VALUES (14, 'Wolfgang', 'mozart', 'Music', 1553, 'Mozart');
+INSERT INTO public.users (id, username, password, faculty, points, surname) VALUES (15, 'Vivaldi', 'vivaldi', 'Music', 4865, 'Giuseppe');
+INSERT INTO public.users (id, username, password, faculty, points, surname) VALUES (7, 'Newton', 'newton', 'Physics', 3443, 'Isaac');
+INSERT INTO public.users (id, username, password, faculty, points, surname) VALUES (8, 'Nietzche', 'nietzche', 'Philosophy', 4023, 'Friederic');
+INSERT INTO public.users (id, username, password, faculty, points, surname) VALUES (13, 'Chopin', 'chopin', 'Music', 946, 'Chopin');
+INSERT INTO public.users (id, username, password, faculty, points, surname) VALUES (4, 'David', 'david', 'IOL', 372, 'Agudelo');

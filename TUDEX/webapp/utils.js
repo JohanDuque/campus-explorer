@@ -1,9 +1,9 @@
-/*This woul be my start function, it gets browser's location and starts the application*/
-
+//GLOBAL VARIABLES
 let events; // Global variable for events
 let stats; // Global variable for stats
 let currentUser;// Global variable for currentUser stored in local storage to keep it in other pages
 
+/*This would be my start function, it gets browser's location and starts the application*/
 function start() {
     //prepareInsertStatements(events); //This would be the function to update events on DB
     callEventsServlet();
