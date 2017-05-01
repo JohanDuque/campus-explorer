@@ -86,6 +86,7 @@ public class DBManager {
                     Users user = new Users();
                     user.setId(rs.getInt("id"));
                     user.setUsername(rs.getString("username"));
+                    user.setSurname(rs.getString("surname"));
                     user.setPoints(rs.getInt("points"));
                     user.setFaculty(rs.getString("faculty"));
 

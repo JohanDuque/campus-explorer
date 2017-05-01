@@ -4,39 +4,56 @@
 function manageStats() {
     sortStatsByUserPoints();
 
-    let statsText = "";
+    let tudexBox = createStatsBox(stats, "Tudelf");
+    appenDivToContent(tudexBox);
+
+    let currentUserFaculty = "IOL"; //TODO get form DB
+
+    let facultyStats = stats.filter(function(stat) {
+        return stat.faculty === currentUserFaculty;
+    });
+
+    let facultyBox = createStatsBox(facultyStats, currentUserFaculty);
+    appenDivToContent(facultyBox);
+}
+
+let createStatsBox = function (stats, boxTitle) {
+    let currentUsername = 'Peter';//TODO get it form servlet
     let i = 1;
 
-    let badgeDiv = document.createElement('div');
-    badgeDiv.className = 'stats_box';
+    let badgeBox = document.createElement('div');
+    badgeBox.className = 'stats_box';
+
+    //Badge Header
+    badgeBox.appendChild(createRowDiv('stats_head', boxTitle));
+
+    //Stats Container
+    let statsContainer = document.createElement('div');
+    statsContainer.className = 'stats_container';
 
     stats.forEach(function (stat) {
+        let statsText = i + '.  ' + stat.username + ' ' + stat.surname;
+        let statDiv = createDoubleTxtImgDiv('images/fire_1.png', statsText, stat.points);
 
-    statsText = i+ ") " + stat.username;
+        //In this way i highlight the current user
+        if (stat.username === currentUsername) {
+            statDiv.style.color = "#fed952";
+            statDiv.style.fontWeight = "bold";
+        }
 
-    let badgeFooter = createRowDiv('badge_footer');
-
-    //let userDiv = createTxtDiv(i+ ") " + stat.username + " .............");
-    let statDiv = createDoubleTxtImgDiv('images/fire_1.png', statsText, stat.points);
-
-    //badgeFooter.appendChild(userDiv);
-    //badgeFooter.appendChild(statDiv);
-
-    //badgeDiv.appendChild(userDiv);
-    badgeDiv.appendChild(statDiv);
-    i++;
-
+        statsContainer.appendChild(statDiv);
+        i++;
     });
-    appenDivToContent(badgeDiv);
-    //let flamesFooterDiv = createTxtImgDiv('images/fire_1.png', 'Your Flame count: ' + flamesCount);
-    //document.body.getElementsByClassName('footer-text')[0].appendChild(flamesFooterDiv);
-}
+
+    badgeBox.appendChild(statsContainer);
+
+    return badgeBox;
+};
 
 function createDoubleTxtImgDiv(img, txt1, txt2) {
     let containerDiv = document.createElement('div');
     containerDiv.className = 'double_txt_img_container';
     containerDiv.appendChild(createRowDiv('double_txt1',txt1));
-    containerDiv.appendChild(createRowDiv('double_txt2','...........'));
     containerDiv.appendChild(createRowDiv('double_txt2',txt2));
     containerDiv.appendChild(createImgDiv(img));
 
@@ -53,4 +70,8 @@ function compare(a, b) {
     if (a.points < b.points)
         return 1;
     return 0;
+}
+
+function filterByUserFaculty( stat ) {
+    return stat.faculty === currentUserFaculty;
 }

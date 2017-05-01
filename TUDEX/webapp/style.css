@@ -35,10 +35,7 @@ body {
     box-shadow: 4px 4px 8px 4px #888888;
     background: #fff;
     color: #00A6D6;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 1.5em 1em;
     padding: 1em;
     font-size: x-large;
 }
@@ -135,6 +132,7 @@ body {
 footer {
     display: flex;
     flex-direction: row;
+    border-top: 8px solid #f7f7f7;
 }
 
 .footer-text {
@@ -192,16 +190,28 @@ footer {
 
 .stats_box {
     position: relative;
-    background: #fff;
-    /* margin-top: 1.5em; */
-    /* margin-bottom: 1.5em; */
-    /* margin-left: 1em; */
-    /* margin-right: 1em; */
+    box-shadow: 4px 4px 8px 4px #888888;
+    background: #002833;
+    color: #00A6D6;
+    margin: 1.5em 1em;
+    padding: 1em;
+    font-size: xx-large;
+}
+
+.stats_head {
+    border-bottom: 4px solid #fed952;
+    font-weight: bold;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.stats_container {
+    position: relative;
+    background: #002833;
     padding: 2em;
     font-size: x-large;
     height: 100%;
     display: grid;
-    /* flex: 1; */
 }
 
 .double_txt_img_container {

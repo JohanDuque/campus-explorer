@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-04-30.00:01:37.168</IntrospectionTimestamp>
-      <IntrospectionStateNumber>963</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-05-01.13:08:09.726</IntrospectionTimestamp>
+      <IntrospectionStateNumber>991</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -45,7 +45,7 @@
     </table>
     <table id="12" parent="3" name="users">
       <ObjectId>16444</ObjectId>
-      <StateNumber>895</StateNumber>
+      <StateNumber>991</StateNumber>
     </table>
     <column id="13" parent="11" name="id">
       <Position>1</Position>
@@ -140,12 +140,17 @@ endtime</ColNames>
       <StateNumber>899</StateNumber>
       <DefaultExpression>0</DefaultExpression>
     </column>
-    <index id="29" parent="12" name="users_pk">
+    <column id="29" parent="12" name="surname">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>991</StateNumber>
+    </column>
+    <index id="30" parent="12" name="users_pk">
       <ObjectId>16451</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="30" parent="12" name="users_pk">
+    <key id="31" parent="12" name="users_pk">
       <ObjectId>16452</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>users_pk</UnderlyingIndexName>

@@ -6,6 +6,7 @@ package it.polimi.iol.duque.bean;
 public class Users {
     private int id;
     private String username;
+    private String surname;
     private String password;
     private String faculty;
     private Integer points;
@@ -24,6 +25,14 @@ public class Users {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     public String getPassword() {
